@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import './index.scss';
+import './styles.scss';
 
-const App = () => {
+
+const Solution = () => {
 	const [hours, setHours] = useState('00');
 	const [minutes, setMinutes] = useState('00');
 
@@ -55,6 +56,7 @@ const App = () => {
 		minutes === '00' ? setMinutes('59') : minDecrement();
 	}
 
+
 	return (
 		<div id="ClockUpdater" className="container">
 			<div className="row">
@@ -102,4 +104,4 @@ const App = () => {
 	);
 };
 
-export default App;
+export default Solution
